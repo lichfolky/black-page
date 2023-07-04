@@ -1,0 +1,90 @@
+:root {
+    --text-color: #e6e6e6;
+    --background-color: #25292d;
+    --accent-color: deeppink;
+    --link-color: color-mix(in srgb, var(--accent-color), #25292d);
+    --hover-color: var(--accent-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    color: var(--text-color);
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+    font-size: 1.4rem;
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.wrapper {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 1.5rem 0 3rem 0;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+a {
+    font-size: 2rem;
+    padding: 3rem 0;
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+.content {
+    display: flex;
+    gap: 2rem;
+}
+
+p {
+    padding: 1rem 0;
+}
